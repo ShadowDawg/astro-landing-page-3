@@ -23,7 +23,7 @@ export default function Home() {
       });
 
       if (response.ok) {
-        setMessage('Thanks! We\'ll keep you updated.');
+        setMessage("Thanks! We'll keep you updated.");
         setEmail('');
       } else {
         const { error } = await response.json();
