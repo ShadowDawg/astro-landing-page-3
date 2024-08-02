@@ -23,7 +23,7 @@ export default function Home() {
       });
 
       if (response.ok) {
-        setMessage("Thanks! We'll keep you updated.");
+        setMessage("Thanks! We will keep you updated.");
         setEmail('');
       } else {
         const { error } = await response.json();
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Top center: App name and tagline */}
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold mb-2">Comet</h1>
-        <p className="text-5xl md:text-5xl lg:text-7xl mb-4">It's written in the stars✨</p>
+        <p className="text-5xl md:text-5xl lg:text-7xl mb-4">It &apos;s written in the stars✨</p>
       </div>
 
       {/* Main content: Description and app mockup */}
