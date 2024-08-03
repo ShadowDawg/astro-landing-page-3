@@ -67,3 +67,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'playwrite';
+  src: url('/fonts/PlaywriteHU-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-custom {
+  font-family: 'playwrite', sans-serif;
+}
+
+@font-face {
+  font-family: 'manrope';
+  src: url('/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-manrope {
+  font-family: 'manrope', sans-serif;
+}

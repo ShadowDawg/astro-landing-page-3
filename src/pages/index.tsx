@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import ShimmerButton from '@/components/magicui/shimmer-button';
 import { Input } from '@/components/ui/input';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -23,7 +25,7 @@ export default function Home() {
       });
 
       if (response.ok) {
-        setMessage("Thanks! We will keep you updated.");
+        setMessage('Thanks! We will keep you updated.');
         setEmail('');
       } else {
         const { error } = await response.json();
@@ -39,17 +41,19 @@ export default function Home() {
     <div className="flex flex-col items-center justify-between min-h-screen p-8">
       {/* Top center: App name and tagline */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-bold mb-2">Comet</h1>
-        <p className="text-5xl md:text-5xl lg:text-7xl mb-4">It &apos;s written in the stars✨</p>
+        <h1 className="text-3xl font-bold mb-2 font-custom">comet.</h1>
+        <p className="text-5xl md:text-5xl lg:text-7xl mb-4">
+          It&apos;s written in the stars✨
+        </p>
       </div>
 
       {/* Main content: Description and app mockup */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full md:px-16 px-8">
         {/* Left side: Title and description */}
         <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-        <p className="text-base md:text-lg lg:text-xl mb-4">
-          Discover yourself, find out how your friends are feeling and match with someone special in insti every week.
-        </p>
+          <p className="text-base md:text-lg lg:text-xl mb-4">
+            Discover yourself, find out how your friends are feeling and match with someone special in insti every week.
+          </p>
           <form
             onSubmit={handleSubmit}
             className="flex justify-center md:justify-start items-center space-x-2"
@@ -73,7 +77,33 @@ export default function Home() {
           </form>
 
           {message && <p className="mt-4 text-green-500">{message}</p>}
+
+          {/* Social Media Icons */}
+          <div className="flex justify-center md:justify-start space-x-4 mt-6">
+            {/* <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                size="2x"
+                className="text-black hover:text-gray-700 transition-colors duration-200"
+              />
+            </a> */}
+            <a href="https://www.instagram.com/comet.app" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="2x"
+                className="text-black hover:text-gray-700 transition-colors duration-200"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/comet-app-934400321/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2x"
+                className="text-black hover:text-gray-700 transition-colors duration-200"
+              />
+            </a>
+          </div>
         </div>
+
         {/* Right side: App mockup image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
