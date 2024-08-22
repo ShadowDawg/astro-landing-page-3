@@ -15,7 +15,7 @@ const AccountDeletionPage = () => {
       {/* Main content */}
       <div className="w-full max-w-3xl text-center">
         <p className="text-xl mb-8">
-          We're sorry to see you go! Here's how you can delete your comet account:
+          We&apos;re sorry to see you go! Here&apos;s how you can delete your comet account:
         </p>
 
         <ol className="list-decimal text-left text-lg space-y-8 mb-8 pl-8">
@@ -34,7 +34,7 @@ const AccountDeletionPage = () => {
           </li>
           <li>Scroll to the bottom of the Settings page</li>
           <li>
-            Click on the "Delete Account" button
+            Click on the &quot;Delete Account&quot; button
             <div className="mt-4">
               <Image
                 src="/account_deletion/two.png"
@@ -46,7 +46,7 @@ const AccountDeletionPage = () => {
             </div>
           </li>
           <li>
-            A pop-up will appear confirming your decision. Click "OK" to permanently delete your account
+            A pop-up will appear confirming your decision. Click &quot;OK&quot; to permanently delete your account
             <div className="mt-4">
               <Image
                 src="/account_deletion/three.png"
