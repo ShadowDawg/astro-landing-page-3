@@ -53,7 +53,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:ml-8 mt-4 md:mt-32">
           <p className="text-base md:text-lg lg:text-xl mb-4">
             Discover yourself, find out how your friends are feeling and match
-            with someone special in insti every week.
+            with someone special every week.
           </p>
           <form
             onSubmit={handleSubmit}

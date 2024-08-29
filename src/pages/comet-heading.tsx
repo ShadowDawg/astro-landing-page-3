@@ -13,6 +13,9 @@ export default function CometHeading() {
       <h1 className="text-5xl font-custom text-[#FFED87] mb-4 text-right">
         It&apos;s written in the stars✨
       </h1>
+      {/* <h1 className="text-9xl font-custom text-[#FFC46E] mb-4 text-right">
+        comet.
+      </h1> */}
       <p className="text-5xl font-manrope text-[#FFFEFF] text-right">
         created by IITM students for IITM students
       </p>
