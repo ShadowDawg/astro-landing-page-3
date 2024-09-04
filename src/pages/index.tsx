@@ -209,29 +209,10 @@ export default function Home() {
 
 
       </main>
-      {/* Footer */}
       <footer className="bg-black py-4 px-8">
-  <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+  <div className="max-w-6xl mx-auto flex flex-col items-center">
     <div className="text-xl font-bold mb-4 sm:mb-0 text-yellow-400 font-custom">
       comet
-    </div>
-    <div className="flex space-x-4">
-      <a
-        href="https://www.instagram.com/comet.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-yellow-400 hover:text-yellow-300 transition-colors duration-200"
-      >
-        <FontAwesomeIcon icon={faInstagram} size="lg" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/comet-app-934400321/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-yellow-400 hover:text-yellow-300 transition-colors duration-200"
-      >
-        <FontAwesomeIcon icon={faLinkedin} size="lg" />
-      </a>
     </div>
   </div>
 </footer>
